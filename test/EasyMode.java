@@ -10,14 +10,14 @@ import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-public class MainInterface extends javax.swing.JFrame {
+public class EasyMode extends javax.swing.JFrame {
 ArrayList <JLabel> Labels = new ArrayList();
 SecureRandom cardsrandom = new cardsrandom();
 String[] piceasy = new String[6];
 String[][]easyroute = new String [4][3];
 int[] cards = new int [6];
 
-    public MainInterface() {
+    public EasyMode() {
         initComponents();
         setSize(800, 600);
         setLocationRelativeTo(this);
@@ -83,8 +83,7 @@ void flipcards(){
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        easy = new javax.swing.JButton();
-        Difficult = new javax.swing.JButton();
+        startButton = new javax.swing.JButton();
         jPanel1easy = new javax.swing.JPanel();
         card1 = new javax.swing.JLabel();
         card2 = new javax.swing.JLabel();
@@ -102,22 +101,20 @@ void flipcards(){
         compare = new javax.swing.JButton();
         hits = new javax.swing.JLabel();
         failures = new javax.swing.JLabel();
+        backButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("easy");
         getContentPane().setLayout(null);
 
-        easy.setText("FACIL");
-        easy.addActionListener(new java.awt.event.ActionListener() {
+        startButton.setText("Empezar");
+        startButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                easyActionPerformed(evt);
+                startButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(easy);
-        easy.setBounds(76, 78, 72, 23);
-
-        Difficult.setText("DIFICIL");
-        getContentPane().add(Difficult);
-        Difficult.setBounds(190, 76, 72, 23);
+        getContentPane().add(startButton);
+        startButton.setBounds(30, 70, 80, 23);
 
         jPanel1easy.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -230,19 +227,34 @@ void flipcards(){
         getContentPane().add(failures);
         failures.setBounds(430, 361, 100, 90);
 
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(backButton);
+        backButton.setBounds(490, 540, 72, 23);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void easyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_easyActionPerformed
+    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
         // TODO add your handling code here:
         jPanel1easy.setVisible(true);
-    }//GEN-LAST:event_easyActionPerformed
+    }//GEN-LAST:event_startButtonActionPerformed
 
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
         // TODO add your handling code here:
         loadimageslabels();
         play.setText("Jugar");
     }//GEN-LAST:event_playActionPerformed
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        MainMenu Main = new MainMenu();
+        Main.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_backButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -261,26 +273,27 @@ void flipcards(){
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EasyMode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EasyMode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EasyMode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EasyMode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainInterface().setVisible(true);
+                new EasyMode().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Difficult;
+    private javax.swing.JButton backButton;
     private javax.swing.JLabel card1;
     private javax.swing.JLabel card10;
     private javax.swing.JLabel card11;
@@ -294,10 +307,10 @@ void flipcards(){
     private javax.swing.JLabel card8;
     private javax.swing.JLabel card9;
     private javax.swing.JButton compare;
-    private javax.swing.JButton easy;
     private javax.swing.JLabel failures;
     private javax.swing.JLabel hits;
     private javax.swing.JPanel jPanel1easy;
     private javax.swing.JButton play;
+    private javax.swing.JButton startButton;
     // End of variables declaration//GEN-END:variables
 }
