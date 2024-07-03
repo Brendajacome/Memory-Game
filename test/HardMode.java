@@ -72,10 +72,10 @@ public void loadimageslabels(){
         }
     } 
 }
-void flipcards(){
-    for(int i = 0; i < Labels.size(); i++){
-        Labels.get(i).setIcon(null);
-        Labels.get(i).setBackground(Color.BLACK);
+void flipcards() {
+    ImageIcon backIcon = new ImageIcon(getClass().getResource("/others/1.jpg"));
+    for (int i = 0; i < Labels.size(); i++) {
+        Labels.get(i).setIcon(backIcon);
     }
 }
     /**
