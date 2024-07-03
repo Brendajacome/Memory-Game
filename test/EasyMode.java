@@ -19,7 +19,7 @@ int[] cards = new int [6];
 
     public EasyMode() {
         initComponents();
-        setSize(800, 600);
+        setSize(700, 800);
         setLocationRelativeTo(this);
         loadingLabels();
         addcard();
@@ -51,7 +51,6 @@ void addcard(){
 }
 public void loadimageslabels(){
     int counter=0;
-    
     for (int row=0; row <easyroute.length;row++){
         for (int column=0; column <easyroute[0].length;column++){
             int temp = cardImagen();
@@ -246,12 +245,17 @@ void flipcards(){
 
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
         // TODO add your handling code here:
+        if(easyroute[0][0]==null){
         loadimageslabels();
         play.setText("Jugar");
+      }else{
+         flipcards();
+         play.setText("Jugar");
+        }
     }//GEN-LAST:event_playActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        MainMenu Main = new MainMenu();
+        Interface Main = new Interface();
         Main.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_backButtonActionPerformed
