@@ -83,12 +83,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="card10" min="-2" pref="80" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="card12" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="card11" min="-2" pref="80" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="card11" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="card12" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                               <Component id="card9" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -121,8 +121,8 @@
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="card10" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
-                      <Component id="card12" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
                       <Component id="card11" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="card12" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="28" max="32767" attributes="0"/>
               </Group>
@@ -138,6 +138,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card1MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card2">
           <Properties>
@@ -147,6 +150,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card2MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card3">
           <Properties>
@@ -156,6 +162,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card3MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card4">
           <Properties>
@@ -165,6 +174,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card4MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card5">
           <Properties>
@@ -174,6 +186,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card5MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card6">
           <Properties>
@@ -183,6 +198,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card6MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card7">
           <Properties>
@@ -192,6 +210,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card7MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card8">
           <Properties>
@@ -201,6 +222,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card8MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card9">
           <Properties>
@@ -210,6 +234,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card9MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card10">
           <Properties>
@@ -219,15 +246,9 @@
               </Border>
             </Property>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="card11">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
-                <EtchetBorder/>
-              </Border>
-            </Property>
-          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card10MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="card12">
           <Properties>
@@ -237,6 +258,21 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card12MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="card11">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card11MouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
