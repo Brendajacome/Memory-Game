@@ -7,7 +7,6 @@ import java.security.SecureRandom;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
 public class EasyMode extends javax.swing.JFrame {
 
@@ -15,19 +14,10 @@ public class EasyMode extends javax.swing.JFrame {
     SecureRandom cardsrandom = new cardsrandom();
     String[] piceasy = new String[6];
     String[][] easyroute = new String[4][3];
-<<<<<<< HEAD
     int[] Quantitycard = new int[2];
     int Quantityclick = 0;
     String[] Compare = new String[2];
     int[] cards = new int[6];
-=======
-    int[] cards = new int[6];
-    int Quantityclick = 0;
-    String[] Compare = new String[2];
-    int[] Quantitycard = new int[2];
-    int Hits = 0;
-    int failures = 0;
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
     public EasyMode() {
         initComponents();
@@ -35,12 +25,7 @@ public class EasyMode extends javax.swing.JFrame {
         setLocationRelativeTo(this);
         loadingLabels();
         addcard();
-<<<<<<< HEAD
         jPanel1easy.setVisible(true);
-=======
-        jPanel1easy.setVisible(false);
-        compare.setEnabled(false);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
     }
 
     void loadingLabels() {
@@ -54,13 +39,8 @@ public class EasyMode extends javax.swing.JFrame {
         Labels.add(card8);
         Labels.add(card9);
         Labels.add(card10);
-<<<<<<< HEAD
         Labels.add(card12);
         Labels.add(card11);
-=======
-        Labels.add(card11);
-        Labels.add(card12);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
     }
 
     public int cardImagen() {
@@ -93,10 +73,6 @@ public class EasyMode extends javax.swing.JFrame {
             for (int column = 0; column < easyroute[0].length; column++) {
                 Labels.get(counter).setOpaque(true);
                 Labels.get(counter).setIcon(new ImageIcon(getClass().getResource(easyroute[row][column])));
-<<<<<<< HEAD
-=======
-                Labels.get(counter).setText("" + (counter + 1));
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
                 counter++;
             }
         }
@@ -162,8 +138,8 @@ public class EasyMode extends javax.swing.JFrame {
         card11 = new javax.swing.JLabel();
         play = new javax.swing.JButton();
         compare = new javax.swing.JButton();
-        jlhits = new javax.swing.JLabel();
-        jlfailures = new javax.swing.JLabel();
+        hits = new javax.swing.JLabel();
+        failures = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -180,7 +156,6 @@ public class EasyMode extends javax.swing.JFrame {
         startButton.setBounds(30, 70, 80, 23);
 
         jPanel1easy.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel1easy.setLayout(null);
 
         card1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -188,11 +163,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card1MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card1);
-        card1.setBounds(31, 18, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -200,11 +170,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card2MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card2);
-        card2.setBounds(129, 18, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -212,11 +177,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card3MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card3);
-        card3.setBounds(221, 18, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -224,11 +184,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card4MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card4);
-        card4.setBounds(31, 116, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -236,11 +191,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card5MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card5);
-        card5.setBounds(129, 116, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -248,11 +198,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card6MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card6);
-        card6.setBounds(221, 116, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -260,11 +205,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card7MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card7);
-        card7.setBounds(31, 214, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card8.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -272,11 +212,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card8MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card8);
-        card8.setBounds(129, 214, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -284,11 +219,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card9MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card9);
-        card9.setBounds(221, 214, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card10.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -296,20 +226,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card10MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-        jPanel1easy.add(card10);
-        card10.setBounds(31, 310, 80, 80);
-
-        card11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        card11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                card11MouseClicked(evt);
-            }
-        });
-        jPanel1easy.add(card11);
-        card11.setBounds(130, 310, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         card12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card12.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -317,7 +233,6 @@ public class EasyMode extends javax.swing.JFrame {
                 card12MouseClicked(evt);
             }
         });
-<<<<<<< HEAD
 
         card11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         card11.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -386,13 +301,9 @@ public class EasyMode extends javax.swing.JFrame {
                     .addComponent(card12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(28, Short.MAX_VALUE))
         );
-=======
-        jPanel1easy.add(card12);
-        card12.setBounds(220, 310, 80, 80);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
 
         getContentPane().add(jPanel1easy);
-        jPanel1easy.setBounds(30, 116, 330, 410);
+        jPanel1easy.setBounds(30, 116, 340, 420);
 
         play.setText("MOSTRAR/JUGAR");
         play.addActionListener(new java.awt.event.ActionListener() {
@@ -404,21 +315,16 @@ public class EasyMode extends javax.swing.JFrame {
         play.setBounds(410, 106, 130, 30);
 
         compare.setText("COMPARAR");
-        compare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                compareActionPerformed(evt);
-            }
-        });
         getContentPane().add(compare);
         compare.setBounds(410, 166, 130, 30);
 
-        jlhits.setBorder(javax.swing.BorderFactory.createTitledBorder("ACIERTOS"));
-        getContentPane().add(jlhits);
-        jlhits.setBounds(430, 236, 100, 90);
+        hits.setBorder(javax.swing.BorderFactory.createTitledBorder("ACIERTOS"));
+        getContentPane().add(hits);
+        hits.setBounds(430, 236, 100, 90);
 
-        jlfailures.setBorder(javax.swing.BorderFactory.createTitledBorder("FALLOS"));
-        getContentPane().add(jlfailures);
-        jlfailures.setBounds(430, 361, 100, 90);
+        failures.setBorder(javax.swing.BorderFactory.createTitledBorder("FALLOS"));
+        getContentPane().add(failures);
+        failures.setBounds(430, 361, 100, 90);
 
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -450,17 +356,9 @@ public class EasyMode extends javax.swing.JFrame {
         if (easyroute[0][0] == null) {
             loadimageslabels();
             play.setText("Jugar");
-<<<<<<< HEAD
         } else {
             flipcards();
             play.setText("Jugar");
-=======
-
-        } else {
-            flipcards();
-            play.setText("Jugando");
-             play.setEnabled(false);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_playActionPerformed
 
@@ -471,155 +369,77 @@ public class EasyMode extends javax.swing.JFrame {
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void card1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card1MouseClicked
-<<<<<<< HEAD
  if (PlayingYesorNo()) {
-=======
-        if (PlayingYesorNo()) {
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
             ShowLabels(Integer.parseInt(card1.getText()) - 1);
         }
     }//GEN-LAST:event_card1MouseClicked
 
     private void card2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card2MouseClicked
-<<<<<<< HEAD
  if (PlayingYesorNo()) {
-=======
-        if (PlayingYesorNo()) {
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
             ShowLabels(Integer.parseInt(card2.getText()) - 1);
         }
     }//GEN-LAST:event_card2MouseClicked
 
     private void card3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card3MouseClicked
-<<<<<<< HEAD
         if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card3.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card3.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card3MouseClicked
 
     private void card4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card4MouseClicked
-<<<<<<< HEAD
        if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card4.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card4.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card4MouseClicked
 
     private void card5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card5MouseClicked
-<<<<<<< HEAD
         if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card5.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card5.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card5MouseClicked
 
     private void card6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card6MouseClicked
-<<<<<<< HEAD
          if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card6.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card6.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card6MouseClicked
 
     private void card7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card7MouseClicked
-<<<<<<< HEAD
          if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card7.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card7.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card7MouseClicked
 
     private void card8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card8MouseClicked
-<<<<<<< HEAD
          if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card8.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card8.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card8MouseClicked
 
     private void card9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card9MouseClicked
-<<<<<<< HEAD
          if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card9.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card9.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card9MouseClicked
 
     private void card10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card10MouseClicked
-<<<<<<< HEAD
        if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card10.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card10.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card10MouseClicked
 
     private void card11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card11MouseClicked
-<<<<<<< HEAD
          if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card11.getText()) - 1);
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card11.getText()) - 1);
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
         }
     }//GEN-LAST:event_card11MouseClicked
 
     private void card12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card12MouseClicked
-<<<<<<< HEAD
          if (PlayingYesorNo()) {
             ShowLabels(Integer.parseInt(card12.getText()) - 1);
         }
     }//GEN-LAST:event_card12MouseClicked
 
-=======
-        if(PlayingYesorNo()){
-        ShowLabels(Integer.parseInt(card12.getText()) - 1);
-        }
-    }//GEN-LAST:event_card12MouseClicked
-
-    private void compareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compareActionPerformed
-        // TODO add your handling code here:
-        if (Compare[0].equals(Compare[1])) {
-            Labels.get(Quantitycard[0]).setVisible(false);
-            Labels.get(Quantitycard[1]).setVisible(false);
-            JOptionPane.showMessageDialog(null, "Bien lo acertaste");
-            Hits++;
-            jlhits.setText("" + Hits);
-        } else {
-            failures++;
-            jlfailures.setText("" + failures);
-            flipcards();
-        }
-        compare.setEnabled(false);
-        Quantityclick = 0;
-    }//GEN-LAST:event_compareActionPerformed
-
->>>>>>> 7699c2a4719d4e3e2b22741eae641b7a46a4d6be
     /**
      * @param args the command line arguments
      */
@@ -671,9 +491,9 @@ public class EasyMode extends javax.swing.JFrame {
     private javax.swing.JLabel card8;
     private javax.swing.JLabel card9;
     private javax.swing.JButton compare;
+    private javax.swing.JLabel failures;
+    private javax.swing.JLabel hits;
     private javax.swing.JPanel jPanel1easy;
-    private javax.swing.JLabel jlfailures;
-    private javax.swing.JLabel jlhits;
     private javax.swing.JButton play;
     private javax.swing.JButton startButton;
     // End of variables declaration//GEN-END:variables
